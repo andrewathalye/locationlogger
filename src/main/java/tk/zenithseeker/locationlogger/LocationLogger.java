@@ -37,7 +37,7 @@ public class LocationLogger {
 			}
 
 			for(ServerPlayerEntity spe : l) {
-				bw.write(System.currentTimeMillis()+" "+spe.getName().getString()+" "+spe.getX()+" "+spe.getY()+" "+spe.getZ());
+				bw.write(System.currentTimeMillis()+" "+spe.getName().getString()+" "+spe.getX()+" "+spe.getY()+" "+spe.getZ()+" "+spe.world.getRegistryKey().getValue().toString());
 				bw.newLine();
 			}
 
